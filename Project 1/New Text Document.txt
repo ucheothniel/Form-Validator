@@ -1,0 +1,82 @@
+HTML
+-first create the html template by typing !
+- link css <link rel="stylesheet" href="style.css">
+-then fill in your header
+-add your script source
+-container class -  .container
+
+
+<form id="form" class="form"></form> for this tutorial, this 
+line will apply in the container class
+
+Define the class of each input field. 
+
+- The container contains forms which can accept different types 
+of data. You can insert a header in the container, you can also
+define the id of the form and the label.
+
+Example of a form-control
+<div class="form-control">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter username">
+            <small>Error message</small>
+        </div>
+
+CTRL + D to highlight the same element across different lines of codes
+CTRL + B to close the side bar
+
+CSS
+- gooogle the font you need
+- click the + sign on the google font page
+- copy the css link or import in html.(for this tutorial css link)
+- add a boarder box. use asterix * to add to everything:
+*{
+    box-sizing: border-box;
+}
+
+- add your body. sample body code block:
+body{
+    background-color: aquamarine;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+- position: relative; when you want to represent an element within
+a parent element, it has to be relative
+
+CSS basically defines how every aspect of your html looks.
+
+creating variables in CSS: make use of '--'
+
+example: :root {
+    --success-color: aquamarine;
+    --error-color: rgb(32, 54, 47);
+}
+
+
+- reading a variable in css "var(--error-color)"
+
+JS
+- The js code will be written in two ways
+
+>> with if statements
+- pull in all the dumb elements (define them as constants)
+
+- create an event signed to the form. The event has a method .preventDefault();
+this method enables the submit button from not submitting or basically doing what its
+supposed to do.
+
+- while working you can use .value to display the actual value of the input paramerer 
+in any of the forms, on the console. example 
+    console.log(username.value);
+
+higher order array method for defining functions tp do diferent things without using too many if else statements.
+
+.trim - used to trim out white spaces from the input when creating the function to validate the input
+
+Template literals - alt + 9 + 6
